@@ -1,0 +1,136 @@
+
+$(document).ready(function(){
+  $('.slider').slick({
+    slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+   prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+  asNavFor: '.sliderTh'
+  });
+  $('.sliderTh').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider',
+  dots: false,
+   arrows: false,
+  centerMode: true,
+ 
+  focusOnSelect: true
+	
+
+	});
+``});
+
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+
+
+
+$(window).scroll(function(){
+	rotateCircle();
+	setNavState()
+})
+
+
+$("#loader").on('click', function(e) {
+  e.stopPropagation();
+  $(this).fadeOut(1000);
+  $(".logoBox").delay(800).fadeTo(1000, 1);
+  $(".header__about").delay(1100).fadeTo(1000, 1);
+  $(".btnKnowMore").delay(1200).fadeTo(1000, 1);
+});
+
+rotateValue=0;
+function rotateCircle(){
+	rotateValue+=2;
+	if(rotateValue>360){
+		rotateValue==0;
+	}
+	
+	// $('.service17 .mask').css('background-image','linear-gradient('+rotateValue+'deg, rgba(36, 85, 162, 0.60), rgba(128, 194, 143, 0.60))')
+	$('.service17 .mask').css('background-image','linear-gradient('+rotateValue+'deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, 0.20))')
+
+	if(screen.width<440){
+		$('.header2 .headerMask').css('background-image','linear-gradient('+rotateValue+'deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85))')
+	}else{
+		$('.header2 .headerMask').css('background-image','linear-gradient('+rotateValue+'deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6))')
+
+	}
+}
+
+$('#captcha').click(function(){
+	$(this).attr('disabled',true);
+	$('.contact1 .sendBtn').css('opacity','1');
+	$('.contact1 .sendBtn').attr('type','submit')
+})
+
+
+	function setNavState(){
+		if(screen.width>768){
+			if($(window).scrollTop()!=0){
+				$('nav').css('background','rgb(0,27,52)')
+				$('nav').css('box-shadow','0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)')
+				$('.table-of-contents a').css('color','#ffffff')
+				$('nav .brand-logo span').css('color','#ffffff')
+			}else{
+				$('nav').css('background','transparent')
+				$('nav').css('box-shadow','none')
+				$('.table-of-contents a').css('color','#fff')
+				$('nav .brand-logo span').css('color','#fff')
+			}
+		}else{
+			$('nav').css('background','transparent')
+			$('nav').css('box-shadow','none')
+
+
+		}
+	}
+
+
+	function showMobileNav(){
+		navSpState=$('#navSp').css('display');
+		console.log(navSpState)
+		if(navSpState=='none'){
+			$('#navSp').fadeIn(300)
+		}else{
+			$('#navSp').fadeOut(300)
+		}
+	}
+
+	$('.navSpTriger').click(function(){
+		showMobileNav()
+	})
+
+
+
+	$('.toolCopy').click(function(){
+		elmId=$(this).attr('id');
+		if(elmId=='emailLondon'){
+			copyToClipboard('investors@jurst-trade.eu')
+		}
+	})
+
+	function copyToClipboard(element) {
+		var $temp = $('<input class="hiddenInp">');
+		$("body").append($temp);
+		$temp.val(element).select();
+		document.execCommand("copy");
+		$temp.remove();
+	}
+
+
+if(screen.width > 768) {
+    new WOW({offset:100}).init();
+}
+
+
+
+
