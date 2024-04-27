@@ -226,7 +226,7 @@ var locations = [
 			"elementType": "all",
 			"stylers": [
 				{
-					"color": "#46bcec"
+					"color": "#ffffff"
 				},
 				{
 					"visibility": "on"
