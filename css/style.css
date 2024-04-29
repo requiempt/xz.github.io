@@ -100,7 +100,7 @@ background-size: cover;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 104%;
 }
 .header .headerBg{
 	position: fixed;
@@ -118,10 +118,7 @@ background-size: cover;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
 }
 .headerWraper {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+    padding: 50px 0 20px;
 	width: 100%;
 }
 .logoBox img{
@@ -338,14 +335,7 @@ height: auto;
 transform: none !important;
 width: auto !important;
 }
-/*
-.sliderTh .slick-track .thumb-slide{
-	 width: 80px !important; 
-	height: 80px !important;
-	background-size: cover;
-	margin-bottom: 10px;
-}
-*/
+
 .sliderTh .slick-track .thumb-slide{
 	 width: 150px !important; 
 	height: 40px !important;
@@ -439,9 +429,6 @@ z-index: 22;
 	background-position: center center;
 }
 
-.service .bgImg.bgAbout1{
-	background-image:url('../img/bg-about-1.jpg');
-}
 .service .bgImg.bgInvestments{
 	background-image:url('../img/investments.jpeg');
 }
@@ -455,27 +442,14 @@ z-index: 22;
 
 
 
-#softList li{
-	list-style-type: circle;
-	display: inline-block;
-	margin-right: 12px;
-	font-size: 18px;
-}#softList li:last-child{
-	margin-right: 0;
-}
-.puce{
-	color: #2355a2;
-}
-
-
-.about1{
+.about{
 	padding: 50px 0 30px;
 	background:rgb(0,27,52, 0.9);
 	position: relative;
 	overflow: hidden;
 }
 
-.about1 h3{
+.about h3{
 	/* text-transform: uppercase; */
 	font-weight: 300;
 	font-size: 4.92rem;
@@ -483,7 +457,7 @@ z-index: 22;
 	color: #fff;
 	margin-bottom: 0;
 }
-.about1 hr{
+.about hr{
 	border: none;
 	border-top: 5px solid #2355a2;
 	width: 199px;
@@ -517,7 +491,7 @@ z-index: 22;
 
 /*CONTACT - CONTACT - CONTACT - CONTACT - CONTACT - CONTACT - CONTACT - */
 
-.contact1{
+.contact{
 padding-bottom: 65px;
 background: rgb(0,27,52);
 }
@@ -534,14 +508,7 @@ height: 450px;
 	width: 200px;
 z-index: 11;
 }
-#tabsContainer {
-	position: absolute;
-	width: 50%;
-	bottom: 0;
-	left: 50%;
-	transform: translatex(-50%);
-	z-index: 99;
-}
+
 .tabsAddress{
 	display: inline-block;
 	padding: 12px 0;
@@ -649,14 +616,14 @@ address{
   opacity: 1;
 }
 /* FOOTER - FOOTER - FOOTER - FOOTER - FOOTER - FOOTER - FOOTER - */ 
-.footer2{
+.footer{
   background: rgb(0,27,52);
 }
 
-.footer2 .socialLink{
+.footer .socialLink{
   text-align: center;
 }
-.footer2 .socialLink li{
+.footer .socialLink li{
   background: #053461;
   font-size: 22px;
   width: 48px;
@@ -667,25 +634,25 @@ address{
   padding-top: 6px;
   margin-right: 0;
 }
-.footer2 .socialLink li a{
+.footer .socialLink li a{
   color: #fff;;
 }
-.footer2 .footer-copyright p{
+.footer .footer-copyright p{
   color: #fff;
   text-align: center;
 }
-.footer2 .sitelink{
+.footer .sitelink{
   text-align: center;
   margin-top: 32px;
 }
-.footer2 .sitelink li{
+.footer .sitelink li{
   display: inline-block;
   border-right: 1px solid #fff;
 	padding: 0 8px;
-}.footer2 .sitelink li:last-child{
+}.footer .sitelink li:last-child{
 	border-right: none;
 }
-.footer2 .sitelink li a {
+.footer .sitelink li a {
 	text-align: center;
 	color: #fff;
 	text-transform: uppercase;
@@ -693,178 +660,9 @@ address{
 	
 }
 
-
-
 #adressBox address{
 	font-size: 18px;
 	font-family: viceCity;
-}
-
-/* BOARD OF DIRECTORS -BOARD OF DIRECTORS -BOARD OF DIRECTORS -BOARD OF DIRECTORS - */  
-.team4 {
-	background: transparent;
-	padding: 85px 0;
-	box-shadow: none;
-	max-height: 90%;
-	height: 90%;
-	overflow: hidden;
-}
-.modal-overlay {
-	background: #000;
-	opacity: .9 !important;
-}
-#modalBoard h4{
-	color: #2355a2;
-	font-size: 2.3rem;
-	text-transform: uppercase;
-	font-family: viceCity;
-}
-.team4 .teamMemberFirstName,
-.team4 .teamMemberName{
-	display: inline-block;
-	text-transform: uppercase;
-	color: #2355a2;
-	font-size: 32px;
-}
-.team4 .teamMemberFirstName{
-	font-weight: 600;
-}
-.team4 .teamFunction{
-	font-size: 24px;
-	color: #fff;
-}
-.team4 p{
-	color: #fff;
-	margin-top: 0;
-}
-.team4 .icoBox{
-	width: 50px;
-	height: 50px;
-	background: #2355a2;
-	color: #fff;
-	display: inline-block;
-	border-radius: 50%;
-	text-align: center;
-	margin-right: 12px;
-	font-size: 24px;
-	padding-top: 4px;
-	margin-bottom: 32px;
-	transition: background .32s ease-in-out;
-}.team4 .icoBox:hover{
-	background: #80c28f;
-}
-
-#modalBoard img{
-	margin-bottom: 32px;
-}
-
-
-#circleContainer{
-	position: relative;
-	width: 450px;
-	height: 450px;
-}
-.circleBoard{
-	z-index: 2;
-	position: absolute;
-	width: 50%;
-	height: 50%;
-	cursor: pointer;
-}
-.circleBoard path{
-	fill:transparent;
-	stroke: #2355a2;
-	stroke-width: 2px;
-}
-#circleTopLeft{
-	top: 0;
-	left: 0;
-}
-#circleTopRight{
-	top: 0;
-	right: 0;
-}
-#circleBottomRight{
-	bottom: 0;
-	right: 0;
-}
-#circleBottomLeft{
-	bottom: 0;
-	left: 0;
-}
-.circleBoard.active path{
-	fill: #2556A3;
-	transition: all .32s ease-in-out;
-}
-#boardImg {
-	z-index: 1;
-	position: absolute;
-	border-radius: 50%;
-	max-width: 56%;
-	max-height: 56%;
-	transform: translate(-50%,-50%);
-	left: 50%;
-	top: 50%;
-}
-
-#boardButton{
-	padding: 0;
-	text-align: center;
-}
-
-#boardButton li {
-	display: inline-block;
-	font-size: 1.5rem;
-	color: #fff;
-	margin-right: 4em;
-	cursor: pointer;
-}#boardButton li:last-child{
-	margin-right: 0;
-}
-
-#boardButton li.active{
-	color: #2355a2;
-}
-
-.memberText{
-	display: none;
-	margin-top: 15%;
-}
-.memberText.active{
-	display: block;
-}
-
-.circleDeco {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	width: 66%;
-	transform: translate(50% ,50%);
-}
-.circleDecoTwo {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 60%;
-	transform: translate(-50% ,50%);
-	z-index: 1;
-}
-.circleDecoThree{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	width: 60%;
-	transform: translate(50% ,50%);
-	z-index: 1;
-}
-.closeModal {
-	position: absolute;
-	right: 16px;
-	top: 16px;
-	font-size: 22px;
-	color: #fff;
-	z-index: 99;
-	cursor: pointer;
 }
 
 /* NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV - NAV -  */
@@ -997,15 +795,6 @@ nav .brand-logo span {
 	}
 }
 
-.circleLeftAnime{
-	background-size: 150%;
-	animation-duration: 3s;
-  	-webkit-animation-name: circleLeftAnime;
-  	animation-name: circleLeftAnime;
-  	-webkit-animation-fill-mode: forwards;
-  	animation-fill-mode:forwards;
-	background-position: center center;
-}
 @keyframes circleLeftAnime {
 	from {
 	  margin-left: -50%;
@@ -1015,15 +804,6 @@ nav .brand-logo span {
 	}
 }
 
-.circleRightAnime{
-	background-size: 150%;
-	animation-duration: 3s;
-  	-webkit-animation-name: circleRightAnime;
-  	animation-name: circleRightAnime;
-  	-webkit-animation-fill-mode: forwards;
-  	animation-fill-mode:forwards;
-	background-position: center center;
-}
 @keyframes circleRightAnime {
 	from {
 	  margin-right: -50%;
@@ -1032,38 +812,6 @@ nav .brand-logo span {
 		margin-right: -0%;
 	}
 }
-
-
-
-#scene1,
-#scene2,
-#scene3{
-	position: absolute;
-	height: 100%;
-	height: 100%;
-	min-height: 100vh;
-	width: 100%;
-	z-index: 1;
-}
-.layer{
-	position: relative;
-	height: 100%;
-	width: 100%;
-}
-
-#layer1,#layer3,#layer5 {
-	opacity: .4;
-	width: 90%;
-	bottom: 0;
-}
-#layer2,#layer4,#layer6{
-	opacity: .25;
-	width: 110%;
-	bottom: 0;
-}
-
-
-
 
 .split {
 	height: 351px;
@@ -1079,11 +827,6 @@ nav .brand-logo span {
 	height: 100%;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6))
 }
-
-.g-recaptcha{
-	display: inline-block;
-}
-
 
 /* MEDIA QUERY - MEDIA QUERY - MEDIA QUERY - MEDIA QUERY - */
 
@@ -1134,13 +877,6 @@ text-align: center;
 	.service .serviceBoxSofts{
 		width: 100%;
 	}
-	.contentBoxLeft,
-	.contentBoxRight{
-		margin: initial;
-	}
-	.contentBoxRight {
-		margin-left: -50%;
-	}
 	#map {
 		min-height: 400px;
 	}
@@ -1152,16 +888,8 @@ text-align: center;
 		left: -110px;
 		min-width: 33%;
 	}
-	.linkedinFlat{
-		display: block;
-	}
 	.videoWrapper{
 		display: none;
-	}
-	#circleContainer {
-		position: relative;
-		width: 400px;
-		height: 400px;
 	}
 	.info__wrp {
     width: 80%;
@@ -1195,8 +923,7 @@ text-align: center;
 }
 @media(max-width:950px){
 	.member-position {
-    font-size: 19px;
-    
+    font-size: 19px; 
 }
 .member-name {
     font-size: 40px;
@@ -1206,7 +933,7 @@ text-align: center;
     min-width: 40%;
 }
 @media(max-width:769px){
-		#nav-mobile{
+	#nav-mobile{
 		display: none !important;
 	}
 	.service .displayFlex{
@@ -1215,16 +942,10 @@ text-align: center;
 	.imgDeco{
 		display: none;
 	}
-	.service .serviceBox{
+	.service{
 		width: 100%;
 	}
-	.contentBoxRight{
-		margin-left: initial;
-	}
-	.circleDecoTwo,
-	.circleDecoThree{
-		width: 100%;
-	}
+	
 	#adressBox{
 		left: 32px;
 	}
@@ -1238,16 +959,6 @@ text-align: center;
 		font-size: 15px;
 	}
 
-	.team4 {
-		padding: 32px;
-		max-height: 100%;
-		height: 100%;
-		top: 0 !important;
-	}
-	#boardButton li {
-		font-size: 1.2rem;
-		margin-right: 1.3em;
-	}
 .investments__blocks-wrapper {
     width: 100%;
 }
@@ -1274,6 +985,7 @@ margin-bottom: 20px;
 	background: rgb(0,27,52);
 	padding-top: 40px;
 }
+
 .member-photo{
 	height: 400px;
 	margin: auto;
@@ -1286,9 +998,20 @@ margin-bottom: 20px;
 .team__member-info{
 	background-color: #fff;
 	text-align: center;
+	min-height: 200px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 .member-name, .member-position{
 	color: rgb(0,27,52);
+}
+.member-position{
+	width: 85%;
+
+	margin:0 auto;
+	margin-bottom: 10px;
 }
 #team .section-title{
 	margin-bottom: 40px;
@@ -1298,69 +1021,84 @@ margin-bottom: 20px;
 	padding-top: 20px;
 }
 }
+@media(max-width:650px){
+.header h2 {
+    font-size: 1.418em;
+		}
+		.member-name {
+    font-size: 36px;
+}
+}
+
+
 @media(max-width:500px){
 	.team__inner {
     padding-bottom: 15px;
 }
 .member-name {
-    font-size: 35px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
+    font-size:  35px;
 }
 .member-position {
     font-size: 17px;
 }
 .team__member-info {
-    padding: 5px 0px;
+    padding: 5px 14px;
 }
 .member-photo {
     height: 350px;
 }
 .next {
- 
     width: 40px;
-    height: 40px;
-  
+    height: 40px;  
 }
 }
 @media(max-width:440px){
+	.team__member-info {
+    min-height: 170px;
+}
+	.header .btnKnowMore {
+     padding: 8px 14px;
+    font-size: 16px;
+   }
+	.container{
+		width: 100%;
+	}
 	address {
 		padding: 14px;
 	}
-	.scrollAnime{
-		display: none;
-	}
-	h1{
-		font-size: 3.1rem;
-	}
+	.headerWraper {
+    padding: 30px 0 20px;
+    width: 100%;
+}
+h1 {
+    font-size: 2.5rem;
+}
+.header h2 {
+    margin-bottom: 35px;
+}
 	.logoBox img{
 		max-width: 15%;
 	}
 	.header h2{
 		font-size: 1.1rem;
 	}
-	.about1 h3{
+	.about h3{
 		font-size: 2.9rem;
 	}
 
-	.about1 h3{
+	.about h3{
 		font-size: 2.9rem;
 	}
-	.contact1 h3,
-	.about1 h3,
+	.contact h3,
+	.about h3,
 	.service h3 {	
 		font-size: 2.9rem;
 	}
-	.service .serviceBox{
+	.service{
 		padding: 32px 16px;
 	}
-	.contentBoxLeft,
-	.contentBoxRight{
-		padding: 32px;
-	}
-	.circleDecoTwo, .circleDecoThree{
-		width: 150px;
-	}
-	.footer2 .footer-top{
+	.footer .footer-top{
 		padding: 32px 0;
 	}
 .investments__block {
@@ -1384,48 +1122,10 @@ h4 {
 		font-size: 18px;
 
 	}
-	#tabsContainer {
-		top: -50px;
-	}
+
 	#map {
 		min-height: 500px;
 	}
-
-	
-	.team4 .teamMemberFirstName, .team4 .teamMemberName{
-		font-size: 22px;
-	}
-	.team4 .teamFunction {
-		font-size: 15px;
-		font-weight: 600;
-	}
-	.modal .modal-content {
-		padding: 0px;
-	}
-	.icoProduct {
-		width: 51px;
-		height: 51px;
-	}
-
-	.team4 {
-		padding: 0px;
-	}
-	.memberText{
-		margin-top: 4%;
-	}
-	.team4 {
-		overflow-y: auto;
-		margin: 0;
-		width: 100%;
-		padding: 0 16px 16px 0;
-	}
-	#boardButton li {
-		margin-bottom: 16px;
-	}
-	.team4 .icoBox {
-		margin-bottom: 0;
-	}
-
 	.header .headerBg {
 		background-size: auto 100%;
 	}
@@ -1437,7 +1137,7 @@ h4 {
     padding-right: 0px !important;
 }
 .member-name {
-    font-size: 36px;
+    font-size: 32px;
 }
 .member-position {
     font-size: 14px;
@@ -1457,34 +1157,22 @@ h4 {
 	border-color: #fff;
 }
 
-#gradientWhiteLeft{
-	position: absolute;
-	left: 0;
-	top: 0;
-	background-image: linear-gradient(to right, #e3e3e3 , rgba(255,255,255,0));
-	width: 155px;
-	height: 100%;
-}
-#gradientWhiteRight{
-	position: absolute;
-	right: 0;
-	top: 0;
-	background-image: linear-gradient(to right, rgba(255,255,255,0) ,#e3e3e3);
-	width: 155px;
-	height: 100%;
-}
-
-.contentBoxRight {
-	margin-left: 0;
-	margin-right: 0;
-}
 
 
-.service .serviceBox {
+.service {
 	min-height: 100vh;
 }
 
+}
+@media(max-width:365px){
 
+.member-name {
+    font-size: 23px;
+}
+.member-position {
+    width: 90%;
+}
+}
 
 
 
