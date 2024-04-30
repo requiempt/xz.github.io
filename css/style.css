@@ -20,7 +20,7 @@
 h1,
 h2,
 h3{
-	font-family: Roboto;
+		font-family : 'viceCity';
 	line-height: .9;
 	color: #fff;
 
@@ -90,10 +90,12 @@ background-size: cover;
 }
 
 .header{
+	display: flex;
 	position: relative;
 	min-height: 100vh;
 	width: 100%;
 	align-items: center;
+
 }
 .header .headerBg,.header .headerMask{
 	position: absolute;
@@ -166,7 +168,43 @@ background-size: cover;
 .aboutContainer{
 	z-index: 3;
 	position: relative;
+	    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
 }
+
+.aboutRow-title{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: end;
+    padding-bottom: 68px;
+    background-color: rgb(255,255,255);
+    margin-bottom: 0;
+    position: relative;
+    max-height: 550px;
+}
+.aboutRow-title::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -99px;
+    height: 100%;
+    width: 1px;
+    border-bottom: 550px solid rgb(255,255,255);
+    border-left: 100px solid transparent;
+}
+.aboutRow-text{
+	width: 60%;
+	    padding: 50px 85px 20px;
+	    display: flex;
+}
+.aboutRow-text .col{
+    max-width: 768px !important;
+ width: 768px !important;
+}
+   
 /*Investments       Investments			 Investments			Investments				Investments*/ 
 
 .investments__inner{
@@ -177,7 +215,6 @@ background-size: cover;
 	z-index: 12;
 	text-align: center;
 	padding: 30px 0;
-	min-height: 100vh;
 }
 
 .investments__blocks-wrapper{
@@ -208,14 +245,30 @@ background-size: cover;
 		max-width: 300px;
 		padding: 10px 20px;
 }
-.investments__blocks-title, .investments-title{
+.investments__blocks-title{
 	color: #fff;
-	text-transform: uppercase;
 	margin: 30px 0;
 }
+.investments-title{
+	
+    background-color: #fff;
+    position: inherit;
+    z-index: 1;
+        text-align: center;
+    padding: 20px 0;
+}
+.investments-title h3{
+	margin: 0;
+	color: rgb(0,27,52);
+}
+.investments__blocks-title{
+	text-transform: uppercase;
+}
+
 .section-title{
-	font-size: 60px;
+	font-size: 5.5rem;
 	margin-bottom: 40px;
+
 }
 .investments__blocks{
 	text-transform: uppercase;
@@ -236,7 +289,10 @@ background-size: cover;
 #team .container{
 	width: 100%;
 }
-
+#team .fluid{
+	background-color: #fff;
+	padding: 20px 0;
+}
 .team__inner{
 background-color: rgb(0,27,52, 0.9);
 	padding: 50px 50px 50px 100px;
@@ -273,7 +329,9 @@ bottom: -1px;
 	height: auto;
 }
 .team-title{
-	color: #fff;
+	    margin: 0;
+    color: rgb(0,27,52);;
+    text-align: center;
 }
 .team__member{
 	display: flex;
@@ -425,7 +483,6 @@ z-index: 22;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	/* background-size: cover !important; */
 	background-position: center center;
 }
 
@@ -440,22 +497,20 @@ z-index: 22;
 	height: 100%;
 }
 
-
-
 .about{
-	padding: 50px 0 30px;
 	background:rgb(0,27,52, 0.9);
 	position: relative;
 	overflow: hidden;
 }
 
 .about h3{
-	/* text-transform: uppercase; */
-	font-weight: 300;
-	font-size: 4.92rem;
+	font-size: 5.5rem;
 	margin-bottom: 1.68rem;
-	color: #fff;
 	margin-bottom: 0;
+	padding-right: 50px;
+    color: rgb(0,27,52);
+    max-width: 400px;
+
 }
 .about hr{
 	border: none;
@@ -850,6 +905,12 @@ nav .brand-logo span {
 		width: auto;
 		display: inline-block;
 	}
+	.aboutRow-title {
+  
+    justify-content: center;
+    padding-bottom: 0px;
+ 
+}
 }
 @media(max-width:1200px){
 
@@ -858,6 +919,30 @@ nav .brand-logo span {
 }	   
 }
 @media(max-width:1025px){
+.aboutContainer {
+    display: block;
+}
+.aboutRow-title {
+   width: 100%;
+    text-align: center; 
+}
+.aboutRow-title::before{
+	display: none;
+}
+.about h3 {
+  padding: 20px 0;
+    max-width: 100%;
+    margin-top: 0;
+}
+.aboutRow-text {
+    width: 100%;
+    padding: 50px 20px;
+}
+.aboutRow-text .col {
+    max-width: 100% !important; 
+    width: 100% !important; 
+
+}
 		#nav-mobile{
 		display: flex !important;
 		justify-content: center;
@@ -898,18 +983,18 @@ text-align: center;
 
 .team__inner {
     padding: 50px;
+    padding-top: 80px;
 }
   .sliderTh {
-    top: -13%;
-       left: 50%;
-       right: auto;
-    transform: translateX(-50%);;
+   top: -65px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
 } 
 .sliderTh .slick-list{
 	padding: 0 !important;
 }
 #team .section-title {
-    margin-bottom: 90px;
     text-align: center;
 }
 .sliderTh .slick-track{
@@ -1013,10 +1098,6 @@ margin-bottom: 20px;
 	margin:0 auto;
 	margin-bottom: 10px;
 }
-#team .section-title{
-	margin-bottom: 40px;
-	margin-top: 0;
-}
 .team__inner{
 	padding-top: 20px;
 }
@@ -1032,6 +1113,9 @@ margin-bottom: 20px;
 
 
 @media(max-width:500px){
+	.about h3 {
+    font-size: 4.5rem;
+  }
 	.team__inner {
     padding-bottom: 15px;
 }
@@ -1054,6 +1138,9 @@ margin-bottom: 20px;
 }
 }
 @media(max-width:440px){
+	#team .section-title {
+		font-size: 2.9rem;
+	}
 	.team__member-info {
     min-height: 170px;
 }
@@ -1095,9 +1182,7 @@ h1 {
 	.service h3 {	
 		font-size: 2.9rem;
 	}
-	.service{
-		padding: 32px 16px;
-	}
+	
 	.footer .footer-top{
 		padding: 32px 0;
 	}
@@ -1155,12 +1240,6 @@ h4 {
 .header .btnKnowMore{
 	color: #fff;
 	border-color: #fff;
-}
-
-
-
-.service {
-	min-height: 100vh;
 }
 
 }
