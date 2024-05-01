@@ -1,4 +1,6 @@
-
+function resizeBackground() {
+    bg.height( $(window).height() + 60);
+}
 $(document).ready(function(){
   $('.slider').slick({
     slidesToShow: 1,
