@@ -1,8 +1,8 @@
 :root{
 	font-family: sans-serif;
 }
-body {
-  overscroll-behavior-y: none;
+html, body{
+	min-height: 100vh;
 }
 html{
 	scroll-behavior: smooth;
