@@ -1,20 +1,26 @@
-$(function(){
 
-  var $w = $(window),
-      $background = $('#background');
+function greedyJumbotron() {
+    var HEIGHT_CHANGE_TOLERANCE = 100; // Approximately URL bar height in Chrome on tablet
 
-  // Fix background image jump on mobile
-  if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-    $background.css({'top': 'auto', 'bottom': 0});
+    var jumbotron = $(this);
+    var viewportHeight = $(window).height();
 
-    $w.resize(sizeBackground);
-    sizeBackground();
-  }
+    $(window).resize(function () {
+        if (Math.abs(viewportHeight - $(window).height()) > HEIGHT_CHANGE_TOLERANCE) {
+            viewportHeight = $(window).height();
+            update();
+        }
+    });
 
-  function sizeBackground() {
-     $background.height(screen.height);
-  }
-});
+    function update() {
+        jumbotron.css('height', viewportHeight + 'px');
+    }
+
+    update();
+}
+
+$('.greedy-jumbotron').each(greedyJumbotron);
+
 $(document).ready(function(){
   $('.slider').slick({
     slidesToShow: 1,
