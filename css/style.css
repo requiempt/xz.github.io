@@ -97,7 +97,7 @@ background-size: 100% 100%;
 .header{
 	display: flex;
 	position: relative;
-	min-height: 100vh;
+	min-height: 100%;
 	width: 100%;
 	align-items: center;
 
