@@ -51,6 +51,7 @@ p {
 }
 .mask{
 		background: rgb(0,27,52, 0.3);
+		z-index: -1;
 }
 /* HEADER - HEADER - HEADER - HEADER - HEADER - HEADER - HEADER - */
 .videoWrapper {
@@ -80,7 +81,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: 100% 100%;
+    background-position: center;
 }
 .loader__inner{
 	position: relative;
@@ -114,6 +116,7 @@ background-size: cover;
 	background-image: url('../img/bgheader.jpg');
 	background-size: 100% 100%;
 	background-position: center;
+	background-attachment: fixed;
 }
 .header .headerMask{
 	z-index: -1;
@@ -179,7 +182,7 @@ background-size: cover;
     flex-direction: column;
     justify-content: end;
     text-align: end;
-    padding-bottom: 68px;
+    padding-bottom: 40px;
     background-color: rgb(255,255,255);
     margin-bottom: 0;
     position: relative;
@@ -199,6 +202,7 @@ background-size: cover;
 	width: 60%;
 	    padding: 50px 85px 20px;
 	    display: flex;
+	    margin: 0;
 }
 .aboutRow-text .col{
     max-width: 768px !important;
@@ -294,7 +298,7 @@ background-size: cover;
 	padding: 20px 0;
 }
 .team__inner{
-background-color: rgb(0,27,52, 0.9);
+position: relative;
 	padding: 50px 50px 50px 100px;
 }
 .slider, .sliderTh{
@@ -357,7 +361,7 @@ bottom: -1px;
 }
 .team__member-info{
 padding: 10px 20px;	
-background-color: rgb(0,27,52);
+background-color: rgb(0,27,52, .7);
 height: 100%;
 
 }
@@ -440,7 +444,7 @@ z-index: 22;
 	position: relative;
 }
 .service .bgImg,
-.service .mask{
+ .mask{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -461,9 +465,21 @@ z-index: 22;
 	color: #2355a2;
 }
 
-.service{
-	background: rgb(0,27,52, 0.9);
+.bgMod::before{
+	content: '';
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-image: url(../img/out.png);
+    background-size: auto 100%;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
 }
+
 .service .noMargin{
 	margin: 0;
 }
@@ -496,9 +512,12 @@ z-index: 22;
 	background: #e3e3e3;
 	height: 100%;
 }
-
+.textMod{
+	color: #fff;
+	    background: rgb(0, 27, 52, .7);
+	        box-shadow: 0 0 20px rgb(0 27 52);
+}
 .about{
-	background:rgb(0,27,52, 0.9);
 	position: relative;
 	overflow: hidden;
 }
@@ -963,7 +982,7 @@ text-align: center;
 		width: 100%;
 	}
 	#map {
-		min-height: 400px;
+		height: 375px;
 	}
 	#adressBox {
 		margin-top: 115px;
@@ -1007,6 +1026,11 @@ text-align: center;
 }
 }
 @media(max-width:950px){
+	#loader{
+	
+background-size: auto 100%;
+    background-position: center;
+}
 	.member-position {
     font-size: 19px; 
 }
@@ -1016,6 +1040,7 @@ text-align: center;
 .member-photo {
     width: 40%;
     min-width: 40%;
+}
 }
 @media(max-width:769px){
 	#nav-mobile{
