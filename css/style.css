@@ -1,10 +1,13 @@
 :root{
 	font-family: sans-serif;
 }
+body {
+  overscroll-behavior-y: none;
+}
 html{
 	scroll-behavior: smooth;
 	scroll-padding: 64px;
-		min-height: 100vh;
+	
 }
 @font-face {
 	font-family : 'viceCity';
