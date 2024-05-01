@@ -1,4 +1,14 @@
-
+var innerHeight = window.innerHeight;
+window.setInterval(function ()
+{
+  var newInnerHeight = window.innerHeight;
+  if (newInnerHeight !== innerHeight)
+  {
+    var newScrollY = window.scrollY + newInnerHeight - innerHeight;
+    // ... do whatever you want with this new scrollY
+    innerHeight = newInnerHeight;
+  }
+}, 1000 / 60);
 function greedyJumbotron() {
     var HEIGHT_CHANGE_TOLERANCE = 100; // Approximately URL bar height in Chrome on tablet
 
