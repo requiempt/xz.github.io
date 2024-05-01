@@ -1,7 +1,10 @@
 :root{
 	font-family: sans-serif;
 }
-
+html{
+	scroll-behavior: smooth;
+	scroll-padding: 64px;
+}
 @font-face {
 	font-family : 'viceCity';
 	src :  url('ViceCitySans.woff') format('woff'), url('ViceCitySans.woff2') format('woff2'), url('ViceCitySans.otf') format('otf'), url('ViceCitySans.ttf') format('truetype');
